@@ -1,0 +1,21 @@
+1. Explain why a number data type added to a string data type returns a string.
+
+JavaScript treats the number as a string due to the nature of string concatenation. It makes it a single string which gives it more consistent behavior.
+
+2. Name a scenario where using the == operator could cause a bug.
+
+Causing a bug could happen with this operator when using an empty string "".  When comparing a varaiable that is false to an empty string, the operator performs type coercion, it tries to convert values to common type. For example, if it is
+compared to null, it is comparing an object to and a string and this could lead to a bug. Always a good rule to remmeber to use === operator to avoid this bug.
+
+3. Name the operator(s) that you find confusing and explain why.
+
+The Multiply and Assign Operator (*=) can be confusing at times. This operatorcombines multiplication and assignment in one single operation. It multiplies the value of the variable on the left by the value on the right and then assigns the result 
+back to the variable on left. I have to work on understanding this one along with the assignment operator.
+
+The modulus and assign operator is another. The modulus and this one are very similar but of course different. This one computes a remainder of the division between the left operand and the right operand and the remainder is assigned back to the 
+variable on left whereas the modulus result does not change unless assigned.
+
+4. Explain a situation where you would use the Modulus operator and why.
+
+A situation where you might use the Modulus operator would be for an alternating logic or switching between and on an off situation. For example. like an incrementing counter. The Modulus operator would switch between two values such
+as 0 and 1 and check the remainder when divided by two. This would give a result of 0 or 1, making it easy to switch between the two.
